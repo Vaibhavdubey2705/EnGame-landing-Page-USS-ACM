@@ -1,0 +1,168 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+  background: url("images/valorant-8054617.jpg") center/cover fixed no-repeat;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(44, 62, 80, 0.6); /* Adjust the opacity value as needed */
+  z-index: -1;
+}
+
+:root {
+
+  /**
+   * colors
+   */
+  --marigold_75: hsla(42, 99%, 46%, 0.75);
+  --marigold: hsl(42, 99%, 46%);
+
+  /**
+   * typography
+   */
+
+  --ff-oxanium: 'Oxanium', cursive;
+  --ff-poppins: 'Poppins', sans-serif;
+
+  --fs-1: 7rem;
+  --fs-2: 4.5rem;
+  --fs-3: 3.6rem;
+  --fs-4: 2.4rem;
+  --fs-5: 2.2rem;
+  --fs-6: 2rem;
+  --fs-7: 1.6rem;
+  --fs-8: 1.5rem;
+  --fs-9: 1.4rem;
+  --fs-10: 1.3rem;
+  --fs-11: 1.2rem;
+
+  --fw-500: 500;
+  --fw-600: 600;
+  --fw-700: 700;
+  --fw-800: 800;
+
+
+}
+
+
+.h1,
+.h2,
+.h3 {
+  color: white;
+  font-family: var(--ff-oxanium);
+  font-weight: var(--fw-800);
+  line-height: 1;
+}
+
+.h1 {
+  font-size: var(--fs-2);
+  letter-spacing: -3px;
+}
+:is(.h1, .h2, .h3, .card-price) .span {
+  text-align: left;
+  color: var(--marigold);
+}
+.hero-title { 
+  margin: 129px 35px;
+  text-align: left;
+  position: relative;
+ }
+ .hero-subtitle {
+  color: var(--marigold);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-700);
+  text-transform: uppercase;
+  margin: -52px 0 0 135px;
+  position: absolute;
+}
+.hero-text {
+  color: lightgrey;
+  margin: -130px 0 0 37px;
+  padding: 10px 0 0 0;
+  position: absolute;
+  text-align: left;
+}
+#acmLogo{
+  height: 60px;
+  width: 66px;
+  opacity: 0.9;
+  border-radius: 5%;
+  float: left;
+
+}
+#letsPlay {
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+  margin: 0;
+  position: absolute;
+  top: 16%;
+  left:24%;
+  font-size: 4rem;
+  transform: translate(-50%, -50%);
+}
+.topContainer1 {
+  padding-inline: 15px;
+}
+.btn {
+  margin-inline: auto;
+  color: black;
+  font-size: var(--fs-8);
+  text-transform: uppercase;
+  font-weight: var(--fw-700);
+  min-height: 55px;
+  padding-inline: 35px;
+  margin: -30px 0 0 34px;
+  position: absolute;
+  background-color: var(--marigold);
+}
+
+.skewBg {
+  position: relative;
+  z-index: 1;
+}
+.btn:is(:hover, :focus)::after { --translateX: -13px; }
+
+#heading1 {
+  color: white;
+  font-family: var(--ff-oxanium);
+  font-weight: var(--fw-800);
+  margin: 18px 5px 0 34px; 
+  padding: 10px; 
+  font-size: 2em;
+  letter-spacing: 1px; 
+}
+
+
+.aboutContainer {
+  margin: -35px 0 0 285px; 
+  border: 3px solid #fff;
+  color: #fff;
+  padding: 20px;
+  border-radius: 15%; 
+  width: 550px; 
+  height: 180px;
+  text-align: center;
+  font-family: 'Nova Square', sans-serif;
+}
+
+#h31{
+  font-size: 2rem;
+  text-align: center;
+  margin: -15px -1px 0 0;
+}
+#carouselExample{
+  height:400px;
+  float: right;
+  margin: -315px 0 0 0;
+  width: 400px;
+  border-radius: 5%;
+  background-color: antiquewhite;
+}

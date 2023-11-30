@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ACM eSports Club</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oxanium:wght@600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&family=Permanent+Marker&display=swap" rel="stylesheet">
+    
+
+</head>
+<body>
+  <div class="topContainer1">
+    <img src="images\acm-logo.svg" alt="ACM logo" id="acmLogo">
+    <h1 id="heading1">ACM  eSports  Club</h1>
+
+    <div class="contentContainer">
+      <p class="hero-subtitle">USS Gaming</p>
+      <h1 class="h1 hero-title">
+        Create <span class="span">Manage</span><br> 
+        Matches
+      </h1>
+      <p class="hero-text">
+        Welcome to ACM eSports Club — where gaming passion meets competitive excellence! <br>
+        Immerse yourself in a world of thrilling matches, camaraderie, and endless opportunities <br>to showcase your gaming skills. Join us on this journey of gaming greatness!
+      </p>
+      <button class="btn skewBig" id="toggleBtn" onclick="toggleAboutContainer()">Read More</button>
+    </div>
+      <div class="aboutContainer" id="about">
+        <h3 id="h31">About</h3>
+        <p>enGame - The Gaming Group the Gaming group of USICT is a student-run group that aims to promote competitive gaming culture in the campus and beyond. Gaming Culture is growing exponentially in India and Games can also be a stress buster for the students. Gaming Group brings an opportunity for students to showcase competitive prowess in various gaming events conducted by it.</p>
+      </div>
+  </div>
+
+  <script>
+    var tog = 0;
+  
+    function toggleAboutContainer() {
+      var aboutContainer = document.getElementById("about");
+      var toggleBtn = document.getElementById("toggleBtn");
+  
+      // Toggle the visibility with animation
+      aboutContainer.style.display = (aboutContainer.style.display === "none") ? "block" : "none";
+  
+      // Change button text dynamically
+      toggleBtn.textContent = (aboutContainer.style.display === "none") ? "Read More" : "Show Less";
+    }
+  </script>
+
+</body>
+</html>
